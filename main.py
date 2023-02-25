@@ -29,7 +29,7 @@ async def main():
 
                 history_of_price.append(float(data_eth['c']))
                 first_value = history_of_price[0]
-                if float(data_eth['c']) > first_value*1.01:
+                if float(data_eth['c']) >= first_value*1.01:
                     print('Price increase on 1%')
                     first_value = data_eth['c']
 
